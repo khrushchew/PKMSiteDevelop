@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'WebSite',
+    'PKM',
+    'NTZ'
 ]
 
 MIDDLEWARE = [
@@ -74,7 +77,7 @@ WSGI_APPLICATION = 'PKMSite.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    '1': 
+    'default': 
         {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'site_admin_db',
@@ -83,7 +86,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432',},
 
-    'default':
+    'pkm_db':
         {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'pkm_db',
