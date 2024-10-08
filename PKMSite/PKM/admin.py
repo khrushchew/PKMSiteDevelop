@@ -1,6 +1,8 @@
 from django.contrib import admin
-
-# Register your models here.
 from .models import PKMCompany
+class YourPkmModelAdmin(admin.ModelAdmin):
+    pass
 
-admin.register(PKMCompany)
+def register_pkm_models(admin_site):
+    admin_site.register(PKMCompany, YourPkmModelAdmin)
+
