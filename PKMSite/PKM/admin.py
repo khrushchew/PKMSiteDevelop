@@ -1,8 +1,9 @@
-from django.contrib import admin
+from django.contrib.admin import AdminSite
 from .models import PKMCompany
-class YourPkmModelAdmin(admin.ModelAdmin):
+
+class PKMAdminSite(AdminSite):
     pass
 
-def register_pkm_models(admin_site):
-    admin_site.register(PKMCompany, YourPkmModelAdmin)
+pkm_admin_site = PKMAdminSite(name='pkm_admin')
 
+pkm_admin_site.register(PKMCompany)

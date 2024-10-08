@@ -1,9 +1,8 @@
-from django.contrib import admin
+from django.contrib.admin import AdminSite
 from .models import NTZCompany
 
-class YourNtzModelAdmin(admin.ModelAdmin):
+class NTZAdminSite(AdminSite):
     pass
+ntz_admin_site = NTZAdminSite(name='ntz_admin')
 
-def register_ntz_models(admin_site):
-    admin_site.register(NTZCompany, YourNtzModelAdmin)
-
+ntz_admin_site.register(NTZCompany)
