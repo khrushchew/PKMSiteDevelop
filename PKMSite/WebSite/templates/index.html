@@ -1,0 +1,588 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS --> 
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <!-- Animate Min CSS -->
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+        <!-- Flaticon CSS -->
+        <link rel="stylesheet" href="{% static 'fonts/flaticon.css' %}">
+        <!-- Boxicons CSS -->
+        <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}">
+        <!-- Owl Carousel Min CSS --> 
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+        <!-- Magnific Popup CSS --> 
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <!-- Nice Select CSS --> 
+        <link rel="stylesheet" href="{% static 'css/nice-select.min.css' %}">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+        <!-- Theme Dark CSS -->
+        <link rel="stylesheet" href="{% static 'css/theme-dark.css' %}">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+
+        <title>ПКМ КОМПЕТЕНЦИИ</title>
+    </head>
+    <body>
+        <!-- Pre Loader -->
+        <div class="preloader">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pre Loader -->
+
+        <!-- Top Header Start -->
+        <header class="top-header top-header-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="top-head-left">
+                            <div class="top-contact">
+                                <h3>Поддержка : <a href="tel:+7 921 097 50 16">+7 921 097 50 16</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="top-header-right">
+                            <div class="language-list">
+                                <select class="language-list-item">
+                                    <option>Русский</option>
+                                    <option>English</option>
+                                    <option>Deutsch</option>
+                                    <option>简体中文</option>
+                                </select>	
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Top Header End -->
+
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <!-- Menu For Mobile Device -->
+            <div class="mobile-nav">
+                 <a href="/" class="logo">
+                    <img style="height: 50px; margin-top: 5px;" src="{% static 'images/logos/logo-1.png' %}" class="logo-one" alt="Logo">
+                    <img style="height: 50px; margin-top: 5px;" src="{% static 'images/logos/logo-2.png' %}" class="logo-two" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu For Desktop Device -->
+            <div class="main-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light ">
+                       <a class="navbar-brand" href="/">
+                            <img style="height: 50px; margin-top: 5px;" src="{% static 'images/logos/logo-1.png' %}" class="logo-one" alt="Logo">
+                            <img style="height: 50px; margin-top: 5px;" src="{% static 'images/logos/logo-2.png' %}" class="logo-two" alt="Logo">
+                        </a>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link active">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/about/" class="nav-link">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/account/" class="nav-link" style="text-transform: none;">
+                                        Личный кабинет
+                                    </a>
+                                </li>
+                            </ul>
+                                <div class="nav-side-item">
+                                    <div class="get-btn">
+                                        <a href="/contact/" class="default-btn btn-bg-two border-radius-50">Связаться с нами<i class='bx bx-chevron-right'></i></a>
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="side-nav-responsive">
+                <div class="container-max">
+                    <div class="dot-menu">
+                        <div class="circle-inner">
+                            <div class="in-circle circle-one"></div>
+                            <div class="in-circle circle-two"></div>
+                            <div class="in-circle circle-three"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="side-nav-inner">
+                            <div class="side-nav justify-content-center align-items-center">
+                                <div class="side-nav-item nav-side">
+                                    <div class="search-box">
+                                        <i class='bx bx-search'></i>
+                                    </div>
+                                    <div class="get-btn">
+                                        <a href="/contact/" class="default-btn btn-bg-two border-radius-50">Связаться с нами<i class='bx bx-chevron-right'></i></a>
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+
+        <!-- Banner Five Area -->
+        <div class="banner-five-area">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="banner-five-content">
+                            <span>ТЕХНОЛОГИИ И IT РЕШЕНИЯ ДЛЯ ВАС</span>
+                            <h1>Внедрение IT сервиса <br> <b>MasterPlan</b> по всей России</h1>
+                            <p>
+                                Мы не диктуем условия — мы создаем их для вас!
+                            </p>
+                            <a href="/contact/" class="default-btn btn-bg-two border-radius-50 ">Связаться с нами</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="banner-five-img">
+                            <img src="{% static 'images/home-five-img.png' %}" alt="Images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Area Five End -->
+
+        <!-- Work Process Area -->
+        <section class="work-process-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="sp-color2">Почему ПКМ-КОМПЕТЕНЦИИ</span>
+                    <h2>Как наши услуги помогут вам развивать ваш бизнес</h2>
+                </div>
+
+                <div class="row pt-45">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="work-process-card-three">
+                            <div class="number-title">01.</div>
+                            <h3>Контроль</h3>
+                            <p>Сервис избавит вас от лишних стрессов за контролем сотрудников. Вы будете видеть прогресс выполнения работ.</p>
+                            <i class="flaticon-project"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="work-process-card-three">
+                            <div class="number-title">02.</div>
+                            <h3>Планирование</h3>
+                            <p>Позволяет осуществлять оперативное планирование на производственных участках, без бардака и головной боли.</p>
+                            <i class="flaticon-chip"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="work-process-card-three">
+                            <div class="number-title">03.</div>
+                            <h3>Анализ</h3>
+                            <p>Поможет выявлять узкие места и находить обоснованную причину их возникновения</p>
+                            <i class="flaticon-effective"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="work-process-card-three">
+                            <div class="number-title">04.</div>
+                            <h3>Конкуренция</h3>
+                            <p>С помощью нашего сервиса вы сможете "выжать" из текущего оборудования от 10% до 25% производительности</p>
+                            <i class="flaticon-bullhorn"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Work Process Area End -->
+
+        <!-- About Area -->
+        <div class="about-area about-bg2 pt-100 pb-70">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img-4">
+                            <img src="{% static 'images/about/about-img4.png' %}" alt="About Images">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="about-content-3 ml-20">
+                            <div class="section-title">
+                                <span class="sp-color2">О нас</span>
+                                <h2>Надёжный партнёр в области инновационных решений</h2>
+                                <p>
+                                    Мы создаём универсальное решение для управления вашим бизнесом. <br> Вам нужно всего лишь представить нам идею, а остальное сделает наша команда.
+                                </p>
+                            </div>
+                            <h3>У нас за плечами более 2 лет разработки сложных программных комплексов</h3>
+                            <div class="all-skill-bar">
+                                <div class="skill-bar" data-percentage="60%">
+                                    <h4 class="progress-title-holder clearfix">
+                                        <span class="progress-title">Dart</span>
+                                        <span class="progress-number-wrapper">
+                                            <span class="progress-number-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-content-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-bar mb-0" data-percentage="40%">
+                                    <h4 class="progress-title-holder clearfix">
+                                        <span class="progress-title">Python</span>
+                                        <span class="progress-number-wrapper">
+                                            <span class="progress-number-mark">
+                                                <span class="percent"></span>
+                                            </span>
+                                        </span>
+                                    </h4>
+                                    <div class="progress-content-outter">
+                                        <div class="progress-content"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Area End -->
+
+        <!-- Services Area -->
+        <section class="services-area-four pt-100 pb-70">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="services-left">
+                            <div class="section-title">
+                                <span class="sp-color2">Наш сервис</span>
+                                <h2>Ищите решение? Мы предоставляем качественный IT продукт</h2>
+                                <p class="margin-auto">
+                                    Удобный инструмент для мониторинга и планирования загрузки оборудования
+MasterPlan обеспечивает анализ собранных данных, используя фильтры и настройки, чтобы выявить узкие места, аномалии и потенциальные улучшения в производственных процессах.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="services-card services-card-color-bg">
+                                    <i class="flaticon-consultant"></i>
+                                    <h3>Команда</h3>
+                                    <p>Благодаря сервису все ваше производство будет работать сообща, как слаженная команда профессионалов</p>
+                                    
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="services-card services-card-color-bg">
+                                    <i class="flaticon-consulting"></i>
+                                    <h3>Всегда на связи</h3>
+                                    <p>Мы поможем с внедрением и работой сервиса на вашем предприятии. Наши технические специалисты всегда с вами</p>
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="services-card services-card-color-bg">
+                                    <i class="flaticon-web-development"></i>
+                                    <h3>Понятный интерфейс</h3>
+                                    <p>MasterPlan простой. Вы быстро поймете как он устроен. Ничего лишнего! Всё сделано для вашего удобства</p>
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="services-card services-card-color-bg">
+                                    <i class="flaticon-stats"></i>
+                                    <h3>Экономия времени</h3>
+                                    <p>После внедрения сервиса, вы освободите как минимум 20% времени вспомогательного персонала</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Area End -->
+
+        <!-- Clients Area -->
+        <section class="clients-area-three pt-100">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="sp-color2">Наши клиенты</span>
+                    <h2>Отзывы наших клиентов</h2>
+                </div>
+
+                <div class="clients-slider-two owl-carousel owl-theme pt-45">
+                    <div class="clients-slider-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="clients-slider-img">
+                                    <img src="{% static 'images/clients-img/client-user-img1.png' %}" alt="Images">
+                                    <div class="clients-slider-circle"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="clients-slider-content">
+                                    <i class="bx bxs-quote-alt-left"></i>
+                                    <p>
+                                        Вау
+                                    </p>
+                                    <h3>Вася пупкин</h3>
+                                    <span>ООО НЕВА</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clients-slider-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="clients-slider-img">
+                                    <img src="{% static 'images/clients-img/client-user-img2.png' %}" alt="Images">
+                                    <div class="clients-slider-circle"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="clients-slider-content">
+                                    <i class="bx bxs-quote-alt-left"></i>
+                                    <p>
+                                       Ого
+                                    </p>
+                                    <h3>Егор Дудочкин</h3>
+                                    <span>ООО МАРМЕЛАДКА</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients Area End -->
+
+        <!-- Counter Area -->
+        <div class="counter-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="sp-color2">Хочу попробовать</span>
+                    <h2>Как внедрить MasterPlan у себя на предприятии?</h2>
+                </div>
+                <div class="row pt-45">
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-another-content">
+                            <h3>01. Заявка</h3>
+                            <span>Оставьте заявку на нашем сайте или позвоните нам</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-another-content">
+                            <h3>02. Подготовка</h3>
+                            <span>Мы должны сделать анализ и произвести работы на "нашей стороне" сервиса</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-another-content">
+                            <h3>03. Обучение</h3>
+                            <span>Обучение можно провести у вас на предприятии или в режиме онлайн.</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-another-content">
+                            <h3>04. Поддержка</h3>
+                            <span>Мы работаем над улучшением нашего сервиса и внедрением новых функций</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="counter-shape">
+                <div class="shape1">
+                    <img src="{% static  'images/shape/shape1.png' %}" alt="Images">
+                </div>
+                <div class="shape2">
+                    <img src="{% static  'images/shape/shape2.png' %}" alt="Images">
+                </div>
+            </div>
+        </div>
+        <!-- Counter Area End -->
+
+        <!-- Technology Area -->
+        <section class="technology-area-four pt-100 pb-70">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="technology-right">
+                            <div class="section-title">
+                                <span class="sp-color2">Платформы</span>
+                                <h2>Мы предоставляем наше решение для разного типа устройств</h2>
+                                <p>
+                                    Можете выбрать одно, а можете несколько - для нас это не проблема!
+                                </p>   
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-6 col-sm-3">
+                                    <div class="technology-item">
+                                        <i class="flaticon-android"></i>
+                                        <h3>Android</h3>
+                                    </div>
+                                </div>
+            
+                                <div class="col-lg-3 col-6 col-sm-3">
+                                    <div class="technology-item">
+                                        <i class="flaticon-website"></i>
+                                        <h3>Web</h3>
+                                    </div>
+                                </div>
+            
+                                <div class="col-lg-3 col-6 col-sm-3">
+                                    <div class="technology-item">
+                                        <i class="flaticon-apple"></i>
+                                        <h3>Ios</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="technology-play-area">
+                            <a href="https://www.youtube.com/watch?v=tUP5S4YdEJo" class="play-btn popup-btn">
+                                <i class="bx bx-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Technology Area End -->
+
+        <!-- Footer Area End -->
+        <footer class="footer-area footer-bg">
+            <div class="container">
+                <div class="footer-top pt-100 pb-70">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="footer-call-content">
+                                    <h3>Поддержка</h3>
+                                    <span><a href="tel:+7 921 097 50 16">+7 921 097 50 16</a></span>
+                                    <i class='bx bx-headphone'></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="footer-widget pl-2">
+                                <h3>
+                                   Рабочие часы
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget pl-5">
+                                <h3>ИНН 7817135030 <br>
+                                    КПП 781701001</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h3>Подписаться на рассылку</h3>
+                                <div class="newsletter-area">
+                                    <form class="newsletter-form" data-toggle="validator" method="POST">
+                                        <input type="email" class="form-control" placeholder="Введите свой email" name="EMAIL" required autocomplete="off">
+                                        <button class="subscribe-btn" type="submit">
+                                            <i class='bx bx-paper-plane'></i>
+                                        </button>
+                                        <div id="validator-newsletter" class="form-result"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="copy-right-area">
+                    <div class="copy-right-text">
+                        <p>
+                            Copyright © <script>document.write(new Date().getFullYear())</script>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+
+        <!-- Color Switch Button -->
+        <div class="switch-box">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <!-- Color Switch Button End -->
+
+        <!-- Jquery Min JS -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <!-- Bootstrap Bundle Min JS -->
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <!-- Owl Carousel Min JS -->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup Min JS -->
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- Nice Select Min JS -->
+        <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+        <!-- Wow Min JS -->
+        <script src="{% static 'js/wow.min.js' %}"></script>
+        <!-- Meanmenu JS -->
+        <script src="{% static 'js/meanmenu.js' %}"></script>
+        <!-- Ajaxchimp Min JS -->
+        <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+        <!-- Form Validator Min JS -->
+        <script src="{% static 'js/form-validator.min.js' %}"></script>
+        <!-- Contact Form JS -->
+        <script src="{% static 'js/contact-form-script.js' %}"></script>
+        <!-- Custom JS -->
+        <script src="{% static 'js/custom.js' %}"></script>
+        
+    </body>
+</html>

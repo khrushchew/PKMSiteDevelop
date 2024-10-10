@@ -1,0 +1,499 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap CSS --> 
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <!-- Animate Min CSS -->
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+        <!-- Flaticon CSS -->
+        <link rel="stylesheet" href="{% static 'fonts/flaticon.css' %}">
+        <!-- Boxicons CSS -->
+        <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}">
+        <!-- Owl Carousel Min CSS --> 
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+        <!-- Magnific Popup CSS --> 
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <!-- Nice Select CSS --> 
+        <link rel="stylesheet" href="{% static 'css/nice-select.min.css' %}">
+        <!-- Meanmenu CSS -->
+        <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+        <!-- Theme Dark CSS -->
+        <link rel="stylesheet" href="{% static 'css/theme-dark.css' %}">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+
+        <title>ПКМ КОМПЕТЕНЦИИ</title>
+    </head>
+
+    <body>
+        <!-- Pre Loader -->
+        <div class="preloader">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Pre Loader -->
+
+<!-- Top Header Start -->
+<header class="top-header top-header-bg">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-6">
+                <div class="top-head-left">
+                    <div class="top-contact">
+                        <h3>Поддержка : <a href="tel:+7 921 097 50 16">+7 921 097 50 16</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="top-header-right">
+                    <div class="language-list">
+                        <select class="language-list-item">
+                            <option>Русский</option>
+                            <option>English</option>
+                            <option>Deutsch</option>
+                            <option>简体中文</option>
+                        </select>	
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Top Header End -->
+
+         <!-- Start Navbar Area -->
+         <div class="navbar-area">
+            <!-- Menu For Mobile Device -->
+            <div class="mobile-nav">
+                 <a href="/" class="logo">
+                    <img style="height: 50px; margin-top: 5px;" src="{% static 'images/logos/logo-1.png' %}" class="logo-one" alt="Logo">
+                    <img style="height: 50px; margin-top: 5px;" src="{% static 'images/logos/logo-2.png' %}" class="logo-two" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Menu For Desktop Device -->
+            <div class="main-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light ">
+                       <a class="navbar-brand" href="/">
+                            <img style="height: 50px; margin-top: 5px;" src="{% static 'images/logos/logo-1.png' %}" class="logo-one" alt="Logo">
+                            <img style="height: 50px; margin-top: 5px;" src="{% static 'images/logos/logo-2.png' %}" class="logo-two" alt="Logo">
+                        </a>
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto">
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/about/" class="nav-link active">
+                                        О нас
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/account/" class="nav-link" style="text-transform: none;">
+                                        Личный кабинет
+                                    </a>
+                                </li>
+                            </ul>
+                                <div class="nav-side-item">
+                                    <div class="get-btn">
+                                        <a href="/contact/" class="default-btn btn-bg-two border-radius-50">Связаться с нами<i class='bx bx-chevron-right'></i></a>
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="side-nav-responsive">
+                <div class="container-max">
+                    <div class="dot-menu">
+                        <div class="circle-inner">
+                            <div class="in-circle circle-one"></div>
+                            <div class="in-circle circle-two"></div>
+                            <div class="in-circle circle-three"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <div class="side-nav-inner">
+                            <div class="side-nav justify-content-center align-items-center">
+                                <div class="side-nav-item nav-side">
+                                    <div class="search-box">
+                                        <i class='bx bx-search'></i>
+                                    </div>
+                                    <div class="get-btn">
+                                        <a href="/contact/" class="default-btn btn-bg-two border-radius-50">Связаться с нами<i class='bx bx-chevron-right'></i></a>
+                                    </div>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+
+         
+        <!-- Inner Banner -->
+        <div class="inner-banner">
+            <div class="container">
+                <div class="inner-title text-center">
+                    <h3>О нас</h3>
+                    <ul>
+                        <li>
+                            <a href="/">Главная</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-chevrons-right'></i>
+                        </li>
+                        <li>О нас</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="inner-shape">
+                <img src="{% static 'images/shape/inner-shape.png' %}" alt="Images">
+            </div>
+        </div>
+        <!-- Inner Banner End -->
+
+        <!-- About Area -->
+        <div class="about-area ptb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-play">
+                            <img src="{% static 'images/about/about-img1.jpg' %}" alt="About Images">
+                            <div class="about-play-content">
+                                <span>Посмотри наше видео</span>
+                                <h2>Лучшее <br>решение для вашего бизнеса!</h2>
+                                <div class="play-on-area">
+                                    <a href="https://www.youtube.com/watch?v=tUP5S4YdEJo" class="play-on popup-btn"><i class='bx bx-play'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="about-content ml-25">
+                            <div class="section-title">
+                                <span class="sp-color2">Более 2 лет разработки</span>
+                                <h2>Надёжный партнёр в области IT решений</h2>
+                                <p>
+                                   Мы предлагаем использовать сервис MasterPlan в абсолютно любом направлении бизнеса. Вы выбираете нас - мы реализуем ваши мечты!
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <ul class="about-list text-start">
+                                        <li><i class='bx bxs-check-circle'></i>Низкая стоимость</li>
+                                        <li><i class='bx bxs-check-circle'></i>Быстрая и гибкая разработка</li>
+                                        <li><i class='bx bxs-check-circle'></i>Надёжность и безопасность</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <ul class="about-list about-list-2 text-start">
+                                        <li><i class='bx bxs-check-circle'></i>Простота использования</li>
+                                        <li><i class='bx bxs-check-circle'></i>Кастомизация</li>
+                                        <li><i class='bx bxs-check-circle'></i>Поддержка</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="about-content-text">Если каждый из этих пунктов тебе подходит, то почему бы не обратиться к нам?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Area End -->
+
+        <!-- Choose Area -->
+        <div class="choose-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="choose-content mr-20">
+                            <div class="section-title">
+                                <span class="sp-color1">Почему выбирают нас</span>
+                                <h2>Мы способны автоматизировать множество процессов</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-6">
+                                    <div class="choose-content-card">
+                                        <div class="content">
+                                            <i class="flaticon-practice"></i>
+                                            <h3>Опыт</h3>
+                                        </div>
+                                        <p>Профессионалы своего дела, любой наш продукт высококачественный и надёжный</p>
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-6 col-6">
+                                    <div class="choose-content-card">
+                                        <div class="content">
+                                            <i class="flaticon-help"></i>
+                                            <h3>Поддержка</h3>
+                                        </div>
+                                        <p>Мы на связи 24/7 - поддержка всегда вам поможет и ответит на все вопросы</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="choose-img">
+                            <img src="{% static 'images/choose-img.jpg' %}" alt="Images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Choose Area End -->
+
+        <!-- Security Area -->
+        <div class="security-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="sp-color2">Бонусы</span>
+                    <h2>Это предоставляется с каждым нашим продуктом</h2>
+                </div>
+                <div class="row pt-45">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="security-card">
+                            <i class="flaticon-cyber-security"></i>
+                            <h3>Безопасность</h3>
+                            <p>Наше приложение отвечает всем стандартам безопасности в РФ</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="security-card">
+                            <i class="flaticon-computer"></i>
+                            <h3>Гибкость</h3>
+                            <p>Изменяйте продукт как захотите, всё реализуемо</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="security-card">
+                            <i class="flaticon-effective"></i>
+                            <h3>Анализ</h3>
+                            <p>Перед началом работы наши аналитики детально изучают ваши требования</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="security-card">
+                            <i class="flaticon-implement"></i>
+                            <h3>Аналитические решения</h3>
+                            <p>Специалисты собирают все ваши идеи, создавая из них полную картину будущего приложения</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="security-card">
+                            <i class="flaticon-consulting"></i>
+                            <h3>Всегда на связи</h3>
+                            <p>Мы поможем с внедрением и работой сервиса на вашем предприятии. Наши технические специалисты всегда с вами</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="security-card">
+                            <i class="flaticon-consultant"></i>
+                            <h3>Команда</h3>
+                            <p>Наша команда прислушивается ко всем требованиям заказчика, а после реализует всё от начала и до конца</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Security Area End -->
+
+        <!-- Brand Area -->
+        <div class="brand-area-two ptb-100">
+            <div class="container">
+                <div class="brand-slider owl-carousel owl-theme">
+                    <div class="brand-item">
+                        <img src="{% static 'images/brand-logo/brand-style1.png' %}" alt="Images">
+                    </div>
+                    <div class="brand-item">
+                        <img src="{% static 'images/brand-logo/brand-style2.png' %}" alt="Images">
+                    </div>
+                    <div class="brand-item">
+                        <img src="{% static 'images/brand-logo/brand-style3.png' %}" alt="Images">
+                    </div>
+                    <div class="brand-item">
+                        <img src="{% static 'images/brand-logo/brand-style4.png' %}" alt="Images">
+                    </div>
+                    <div class="brand-item">
+                        <img src="{% static 'images/brand-logo/brand-style5.png' %}" alt="Images">
+                    </div>
+                    <div class="brand-item">
+                        <img src="{% static 'images/brand-logo/brand-style3.png' %}" alt="Images">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand Area End -->
+
+        <!-- Counter Area -->
+        <div class="counter-area pt-100 pb-70">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="sp-color2">Хочу попробовать</span>
+                    <h2>Как внедрить MasterPlan у себя на предприятии?</h2>
+                </div>
+                <div class="row pt-45">
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-another-content">
+                            <h3>01. Заявка</h3>
+                            <span>Оставьте заявку на нашем сайте или позвоните нам</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-another-content">
+                            <h3>02. Подготовка</h3>
+                            <span>Мы должны сделать анализ и произвести работы на "нашей стороне" сервиса</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-another-content">
+                            <h3>03. Обучение</h3>
+                            <span>Обучение можно провести у вас на предприятии или в режиме онлайн.</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 col-md-3">
+                        <div class="counter-another-content">
+                            <h3>04. Поддержка</h3>
+                            <span>Мы работаем над улучшением нашего сервиса и внедрением новых функций</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="counter-shape">
+                <div class="shape1">
+                    <img src="{% static 'images/shape/shape1.png' %}" alt="Images">
+                </div>
+                <div class="shape2">
+                    <img src="{% static 'images/shape/shape2.png' %}" alt="Images">
+                </div>
+            </div>
+        </div>
+        <!-- Counter Area End -->
+
+        <!-- Footer Area End -->
+        <footer class="footer-area footer-bg">
+            <div class="container">
+                <div class="footer-top pt-100 pb-70">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="footer-widget">
+                                <div class="footer-call-content">
+                                    <h3>Поддержка</h3>
+                                    <span><a href="tel:+7 921 097 50 16">+7 921 097 50 16</a></span>
+                                    <i class='bx bx-headphone'></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-sm-6">
+                            <div class="footer-widget pl-2">
+                                <h3>
+                                   Рабочие часы
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget pl-5">
+                                <h3>ИНН 7817135030 <br>
+                                    КПП 781701001</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="footer-widget">
+                                <h3>Подписаться на рассылку</h3>
+                                <div class="newsletter-area">
+                                    <form class="newsletter-form" data-toggle="validator" method="POST">
+                                        <input type="email" class="form-control" placeholder="Введите свой email" name="EMAIL" required autocomplete="off">
+                                        <button class="subscribe-btn" type="submit">
+                                            <i class='bx bx-paper-plane'></i>
+                                        </button>
+                                        <div id="validator-newsletter" class="form-result"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="copy-right-area">
+                    <div class="copy-right-text">
+                        <p>
+                            Copyright © <script>document.write(new Date().getFullYear())</script>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End -->
+
+        <!-- Color Switch Button -->
+        <div class="switch-box">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <!-- Color Switch Button End -->
+
+        <!-- Jquery Min JS -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <!-- Bootstrap Bundle Min JS -->
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <!-- Owl Carousel Min JS -->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup Min JS -->
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <!-- Nice Select Min JS -->
+        <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+        <!-- Wow Min JS -->
+        <script src="{% static 'js/wow.min.js' %}"></script>
+        <!-- Meanmenu JS -->
+        <script src="{% static 'js/meanmenu.js' %}"></script>
+        <!-- Ajaxchimp Min JS -->
+        <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+        <!-- Form Validator Min JS -->
+        <script src="{% static 'js/form-validator.min.js' %}"></script>
+        <!-- Contact Form JS -->
+        <script src="{% static 'js/contact-form-script.js' %}"></script>
+        <!-- Custom JS -->
+        <script src="{% static 'js/custom.js' %}"></script>
+        
+    </body>
+</html>
