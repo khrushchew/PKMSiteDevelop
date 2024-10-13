@@ -9,10 +9,10 @@ class FieldAdmin(admin.ModelAdmin):
 
     def get_queryset(self, request):
         qs = super().get_queryset(request)
-        return qs.filter(company__name=request.user.username)
+        return qs.filter(company__code=request.user.username)
 
     def save_model(self, request, obj, form, change):
-        company = Company.objects.get(name=request.user.username)
+        company = Company.objects.get(code=request.user.username)
         obj.company = company
         super().save_model(request, obj, form, change)
 

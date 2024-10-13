@@ -12,6 +12,6 @@ class Machine(models.Model):
     first_machine_type = models.ForeignKey('Firstmachinetype', models.SET_NULL, blank=True, null=True)
     second_machine_type = models.ForeignKey('Secondmachinetype', models.SET_NULL, blank=True, null=True)
     detail_machine_type = models.ForeignKey('Detailmachinetype', models.SET_NULL, blank=True, null=True)
-
+ 
     class Meta:
         db_table = 'Machine'
