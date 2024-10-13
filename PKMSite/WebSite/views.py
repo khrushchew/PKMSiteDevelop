@@ -21,19 +21,13 @@ from django.contrib.auth.views import LoginView
 from django.shortcuts import redirect
 from django.http import HttpResponseRedirect
 
+
+
+from django.contrib.auth.views import LoginView
+from django.shortcuts import redirect
+
+
 class CustomLoginView(LoginView):
-    # def form_valid(self, form):
-
-    #     user = form.get_user()
-
-    #     if self.request.user.username == 'pkm':
-    #         return redirect('/pkm/')
-    #     elif self.request.user.get_username() == 'ntz':
-    #         return redirect('/ntz/')
-    #     else:
-    #         return super().form_valid(form)
-
-
     def get_success_url(self):
         if self.request.user.username == 'pkm':
             return redirect('/pkm/')

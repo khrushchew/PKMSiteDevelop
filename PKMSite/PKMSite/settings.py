@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'WebSite',
-    'PKM',
-    'NTZ'
 ]
 
 MIDDLEWARE = [
@@ -80,29 +78,11 @@ DATABASES = {
     'default': 
         {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'site_admin_db',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': '12345678',
         'HOST': 'localhost',
         'PORT': '5432',},
-
-    'pkm_db':
-        {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pkm_db',
-        'USER': 'postgres',
-        'PASSWORD': '12345678',
-        'HOST': 'localhost',
-        'PORT': '5432',},
-
-    'ntz_db':
-        {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ntz_db',
-        'USER': 'postgres',
-        'PASSWORD': '12345678',
-        'HOST': 'localhost',
-        'PORT': '5432',}
     }
 
 DATABASES_ROUTERS = ['WebSite.db_router.Router']
