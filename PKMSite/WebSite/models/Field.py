@@ -7,3 +7,7 @@ class Field(models.Model):
 
     class Meta:
         db_table = 'Field'
+
+
+    def __str__(self):
+        return f"{self.name}"

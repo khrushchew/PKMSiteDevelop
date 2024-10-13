@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate
+from django.http import HttpResponse
+from django.contrib import messages
 
 # Create your views here.
 def index(request):
@@ -17,21 +19,18 @@ def recovery(request):
 def contact(request):
     return render(request, 'contact.html')
 
-from django.contrib.auth.views import LoginView
-from django.shortcuts import redirect
-from django.http import HttpResponseRedirect
 
-
-
-from django.contrib.auth.views import LoginView
-from django.shortcuts import redirect
-
-
-class CustomLoginView(LoginView):
-    def get_success_url(self):
-        if self.request.user.username == 'pkm':
-            return redirect('/pkm/')
-        elif self.request.user.get_username() == 'ntz':
-            return redirect('/ntz/')
+def login_view(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        
+        if user is not None:
+            login(request, user)
+            return redirect('/admin/')  # Перенаправляем в админку
         else:
-            return super().get_success_url()
+            messages.error(request, 'Неверный логин или пароль')
+    
+    return render(request, 'account.html')
+
