@@ -1,6 +1,9 @@
 from django.db import models
 
-from . import Area, Machine, User
+from .Area import Area
+from .Machine import Machine
+from .User import User
+
 
 class Department(models.Model):
     name = models.CharField(max_length=255, null=False, blank=False, verbose_name='Название цеха')
@@ -12,11 +15,9 @@ class Department(models.Model):
     stuff_quantity = models.PositiveIntegerField(default=0, null=False, blank=False, verbose_name='Количество персонала')
 
     def save(self, *args, **kwargs):
-        company = self.field.company
-
         self.areas_quantity = Area.objects.filter(department__field=self.field).count()
         self.machines_quantity = Machine.objects.filter(area__department__field=self.field).count()
-        self.stuff_quantity = User.objects.filter(subdivision__area_department__field=self.field).count()
+        self.stuff_quantity = User.objects.filter(subdivision__area__department__field=self.field).count()
 
         super().save(*args, **kwargs)
 

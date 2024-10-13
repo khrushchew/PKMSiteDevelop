@@ -2,6 +2,9 @@ from django.contrib import admin
 from django.contrib.auth.models import User, Group
 
 from .admins.FieldAdmin import FieldAdmin
+from .admins.DepartmentAdmin import DepartmentAdmin
+from .admins.RoleAdmin import RoleAdmin
+from .admins.AreaAdmin import AreaAdmin
 
 
 admin.site.unregister(User)

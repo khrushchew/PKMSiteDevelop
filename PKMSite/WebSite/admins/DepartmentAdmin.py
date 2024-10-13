@@ -2,13 +2,15 @@ from django.contrib import admin
 from ..models.Department import Department
 
 
-class FieldAdmin(admin.ModelAdmin):
-    list_display = ('name', 'field', 'indent') 
-    readonly_fields = ('company',)
+class DepartmentAdmin(admin.ModelAdmin):
+    list_display = ('name', 'field', 'indent', 'areas_quantity', 'machines_quantity', 'stuff_quantity') 
+    readonly_fields = ('indent', 'areas_quantity', 'machines_quantity', 'stuff_quantity')
+
+    ordering = ('name',)
 
     def get_queryset(self, request):
         qs = super().get_queryset(request)
-        return qs.filter(company__code=request.user.username)
+        return qs.filter(field__company__code=request.user.username)
 
 
-admin.site.register(Department, FieldAdmin)
+admin.site.register(Department, DepartmentAdmin)

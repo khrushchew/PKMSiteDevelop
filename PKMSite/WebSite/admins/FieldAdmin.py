@@ -7,6 +7,8 @@ class FieldAdmin(admin.ModelAdmin):
     list_display = ('name', 'company') 
     readonly_fields = ('company',)
 
+    ordering = ('name',)
+    
     def get_queryset(self, request):
         qs = super().get_queryset(request)
         return qs.filter(company__code=request.user.username)
