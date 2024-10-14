@@ -3,8 +3,8 @@ from ..models.Department import Department
 
 
 class DepartmentAdmin(admin.ModelAdmin):
-    list_display = ('name', 'field', 'indent', 'areas_quantity', 'machines_quantity', 'stuff_quantity') 
-    readonly_fields = ('indent', 'areas_quantity', 'machines_quantity', 'stuff_quantity')
+    list_display = ('name', 'field', 'indent', 'areas_quantity', 'machines_quantity') 
+    readonly_fields = ('indent', 'areas_quantity', 'machines_quantity')
 
     ordering = ('name',)
 

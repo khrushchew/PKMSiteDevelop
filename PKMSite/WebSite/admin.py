@@ -6,6 +6,7 @@ from .admins.DepartmentAdmin import DepartmentAdmin
 from .admins.RoleAdmin import RoleAdmin
 from .admins.AreaAdmin import AreaAdmin
 from .admins.SubdivisionAdmin import SubdivisionAdmin
+from .admins.UserAdmin import UserAdmin
 
 
 admin.site.unregister(User)

@@ -12,7 +12,5 @@ from .models.Department import Department
 @receiver(post_delete, sender=Area)
 @receiver(post_save, sender=Machine)
 @receiver(post_delete, sender=Machine)
-@receiver(post_save, sender=User)
-@receiver(post_delete, sender=User)
 def update_department_quantity(sender, instance, **kwargs):
     instance.department.save()

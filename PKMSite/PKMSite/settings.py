@@ -10,6 +10,21 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+from .lock import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_STORAGE_BUCKET_NAME, AWS_S3_ENDPOINT_URL, AWS_S3_REGION_NAME, DEFAULT_FILE_STORAGE, MEDIA_URL
+
+AWS_ACCESS_KEY_ID = AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY =  AWS_SECRET_ACCESS_KEY
+AWS_STORAGE_BUCKET_NAME =  AWS_STORAGE_BUCKET_NAME
+AWS_S3_ENDPOINT_URL =  AWS_S3_ENDPOINT_URL
+AWS_S3_REGION_NAME =  AWS_S3_REGION_NAME
+
+DEFAULT_FILE_STORAGE = DEFAULT_FILE_STORAGE
+MEDIA_URL = MEDIA_URL
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,10 +35,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+SECRET_KEY = 'django-insecure-*&2b9#t#key&q&(9off#&d1k!tmlfy$40-q&5==xcbh4zdw$5('
 
 ALLOWED_HOSTS = ['*']
 
@@ -76,7 +88,16 @@ WSGI_APPLICATION = 'PKMSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = []
+DATABASES = DATABASES = {
+    'default': 
+        {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'main_db',
+        'USER': 'postgres',
+        'PASSWORD': '12345678',
+        'HOST': 'localhost',
+        'PORT': '5432',},
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -124,4 +145,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGOUT_REDIRECT_URL='/'
 
-SESSION_COOKIE_AGE = 60
+SESSION_COOKIE_AGE = 3600

@@ -12,12 +12,12 @@ class Department(models.Model):
 
     areas_quantity = models.PositiveIntegerField(default=0, null=False, blank=False, verbose_name='Количество участков')
     machines_quantity = models.PositiveIntegerField(default=0, null=False, blank=False, verbose_name='Количество машин')
-    stuff_quantity = models.PositiveIntegerField(default=0, null=False, blank=False, verbose_name='Количество персонала')
+    # stuff_quantity = models.PositiveIntegerField(default=0, null=False, blank=False, verbose_name='Количество персонала')
 
     def save(self, *args, **kwargs):
         self.areas_quantity = Area.objects.filter(department__field=self.field).count()
         self.machines_quantity = Machine.objects.filter(area__department__field=self.field).count()
-        self.stuff_quantity = User.objects.filter(subdivision__area__department__field=self.field).count()
+        # self.stuff_quantity = User.objects.filter(subdivision__area__department__field=self.field).count()
 
         super().save(*args, **kwargs)
 
