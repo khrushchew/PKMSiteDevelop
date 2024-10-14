@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+'Идентификатор ключа YCAJEm-2S-mHduWCtZqItQD1G'
+
+'Ваш секретный ключ'
+'YCOrn0-JVO8Ale7lyFdEtKyg9ZPuOR-dkDCZEbzF'
 
 # Application definition
 
@@ -38,7 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'WebSite',
+    'storages',
 ]
+
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

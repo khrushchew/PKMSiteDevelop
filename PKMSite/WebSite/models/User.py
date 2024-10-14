@@ -8,6 +8,7 @@ class User(models.Model):
     subdivision = models.ForeignKey('Subdivision', models.SET_NULL, blank=True, null=True)
     role = models.ForeignKey('Role', models.SET_NULL, blank=True, null=True)
     is_activated = models.BooleanField(default=False)
+    profile_picture = models.ImageField(upload_to='profile_pics/', blank=False, null=False)
 
     class Meta:
         db_table = 'User'
