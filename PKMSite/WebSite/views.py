@@ -19,7 +19,6 @@ def recovery(request):
 def contact(request):
     return render(request, 'contact.html')
 
-
 def login_view(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -28,7 +27,7 @@ def login_view(request):
         
         if user is not None:
             login(request, user)
-            return redirect('/admin/')  # Перенаправляем в админку
+            return redirect('/admin/')
         else:
             messages.error(request, 'Неверный логин или пароль')
     
