@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 from .lock import AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_STORAGE_BUCKET_NAME, AWS_S3_ENDPOINT_URL, AWS_S3_REGION_NAME, DEFAULT_FILE_STORAGE, MEDIA_URL
 
@@ -88,16 +88,8 @@ WSGI_APPLICATION = 'PKMSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = DATABASES = {
-    'default': 
-        {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'main_db',
-        'USER': 'postgres',
-        'PASSWORD': '12345678',
-        'HOST': 'localhost',
-        'PORT': '5432',},
-    }
+from .lock import DATABASES
+DATABASES = DATABASES
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -135,7 +127,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'WebSite' / 'static'
+    # BASE_DIR / 'WebSite' / 'static'
+    BASE_DIR / 'static'
 ]
 
 # Default primary key field type

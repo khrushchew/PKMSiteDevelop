@@ -3,7 +3,6 @@ from .views import index, about, account, recovery, contact, login_view
 from django.contrib import admin
 from django.views.generic import RedirectView
 
-
 urlpatterns=[
     path('', index, name='index'),
     path('about/', about, name='about'),
